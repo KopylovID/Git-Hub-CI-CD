@@ -1,5 +1,5 @@
 test:
-	uv run pytest --verbose
+	uv run pytest -v
 
 ruff:
 	uv run ruff check .

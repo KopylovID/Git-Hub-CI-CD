@@ -33,6 +33,7 @@ indent-style = "space"
 
 [tool.pytest.ini_options]
 testpaths = ["test"]
+disable_test_id_escaping_and_forfeit_all_rights_to_community_support = true
 
 markers = [
     "model: Макер для модели",
