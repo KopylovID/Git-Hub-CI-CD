@@ -11,3 +11,4 @@
 6. `uv run ruff format --check`
 7. `uv run ruff format --diff`
 8. `uv run ruff format .`
+9. `uv run pytest --verboze`
