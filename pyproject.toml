@@ -30,3 +30,11 @@ ignore = [
 [tool.ruff.format]
 quote-style = "single"
 indent-style = "space"
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+
+markers = [
+    "model: Макер для модели",
+    "debug: Маркер для отладки"
+]
