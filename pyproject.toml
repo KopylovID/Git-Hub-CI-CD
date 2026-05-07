@@ -1,0 +1,32 @@
+[project]
+name = "github-ci-cd"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=9.0.3",
+    "ruff>=0.15.12",
+]
+
+[tool.ruff]
+# Общие настройки
+line-length = 120
+target-version = "py313"
+src = ["src"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # ошибки
+    "W",    # предупреждения
+    "F",    # неиспользуемые импорты/переменные
+    "I",    # сортировка импортов
+    "UP",   # современный синтаксис
+]
+
+ignore = [
+    "UP035", # Отключил упоминание deprecated Dict
+    "UP006"  # Отключил упоминание Use `dict` instead of `Dict` for type annotation
+]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
