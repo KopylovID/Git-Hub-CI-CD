@@ -31,7 +31,7 @@ class Data:
         return json.dumps(self.data, ensure_ascii=False)
 
     def update(self, idx: str, data: Dict) -> None:
-        """Функция обновления данных по конкретному контакту"""
+        """Функция обновления данных"""
         self.data[str(idx)] = data
         return idx
 
