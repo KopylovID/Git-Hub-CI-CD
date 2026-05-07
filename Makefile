@@ -4,4 +4,7 @@ test:
 	uv run pytest -v
 
 ruff:
-	uv run ruff check .
+
+	uv run ruff check --output-format=github --exit-non-zero-on-fix .
+
+# --exit-non-zero-on-fix выходит с отрицательным результатом
