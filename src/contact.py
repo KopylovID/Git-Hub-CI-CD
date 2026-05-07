@@ -5,6 +5,6 @@ from dataclasses import dataclass
 class Contact:
     """Класс данных - контакт"""
 
-    name: str = ""
-    phone: str = ""
-    note: str = ""
+    name: str = ''
+    phone: str = ''
+    note: str = ''
